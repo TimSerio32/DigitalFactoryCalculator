@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="btn_one, btn_four, btn_seven, btn_clear, btn_tangent" />
+
+    <TextView
+        android:id="@+id/text_display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:gravity="right"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:text="@string/one"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_display" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="btn_one, btn_four, btn_seven, btn_clear, btn_tangent" />
+
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:text="@string/two"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btn_one"
+        app:layout_constraintTop_toBottomOf="@+id/text_display" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="btn_two, btn_five, btn_eight, btn_zero, btn_sine" />
+
+    <Button
+        android:id="@+id/btn_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:text="@string/three"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/text_display" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="btn_three, btn_six, btn_nine, btn_cosine" />
+
+    <Button
+        android:id="@+id/btn_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:text="@string/times"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        app:layout_constraintTop_toBottomOf="@+id/text_display" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="btn_one, btn_two, btn_three, btn_times"/>
+
+    <Button
+        android:id="@+id/btn_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/four"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barrier4" />
+
+    <Button
+        android:id="@+id/btn_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/five"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/barrier1"
+        app:layout_constraintTop_toTopOf="@+id/barrier4" />
+
+    <Button
+        android:id="@+id/btn_six"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/six"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/barrier2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_three" />
+
+    <Button
+        android:id="@+id/btn_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/divide"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_times" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="btn_four, btn_five, btn_six, btn_divide"/>
+
+    <Button
+        android:id="@+id/btn_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/seven"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_four" />
+
+    <Button
+        android:id="@+id/btn_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/eight"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/barrier1"
+        app:layout_constraintTop_toTopOf="@+id/barrier5" />
+
+    <Button
+        android:id="@+id/btn_nine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/nine"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/barrier2"
+        app:layout_constraintTop_toTopOf="@+id/barrier5" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/add"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        app:layout_constraintTop_toTopOf="@+id/barrier5" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="btn_seven, btn_eight, btn_nine, btn_add"/>
+
+    <Button
+        android:id="@+id/btn_zero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/zero"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/barrier1"
+        app:layout_constraintTop_toTopOf="@+id/barrier6" />
+
+    <Button
+        android:id="@+id/btn_subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/subtract"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        app:layout_constraintTop_toTopOf="@+id/barrier6" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="btn_clear, btn_zero, btn_subtract"/>
+
+    <Button
+        android:id="@+id/btn_cosine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/cosine"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/barrier2"
+        app:layout_constraintTop_toTopOf="@+id/barrier7" />
+
+    <Button
+        android:id="@+id/btn_sine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/sine"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/barrier1"
+        app:layout_constraintTop_toTopOf="@+id/barrier7" />
+
+    <Button
+        android:id="@+id/btn_tangent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="@string/tangent"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barrier7" />
+
+    <Button
+        android:id="@+id/btn_equals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="@string/equals"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier3"
+        app:layout_constraintTop_toTopOf="@+id/barrier7" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="btn_tangent, btn_cosine, btn_sine, btn_equals"/>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/clear"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barrier6" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/barrier9"
+        app:layout_constraintEnd_toEndOf="@+id/btn_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

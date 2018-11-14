@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "859215491580",
+    "firebase_url": "https://digitalfactorycalculator.firebaseio.com",
+    "project_id": "digitalfactorycalculator",
+    "storage_bucket": "digitalfactorycalculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859215491580:android:5d12e587c041450e",
+        "android_client_info": {
+          "package_name": "serio.tim.android.com.digitalfactorycalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "859215491580-o7r2usp26ksu1vhir3v8916antqv9797.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "serio.tim.android.com.digitalfactorycalculator",
+            "certificate_hash": "40d20cbccda56006d697e823c0d09375739cfb83"
+          }
+        },
+        {
+          "client_id": "859215491580-mbkhvil6j9djhrrario5d3r7c05h06jn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEdUy-hQCiDvIyI6NIrtXFf596A93Bkbk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "859215491580-mbkhvil6j9djhrrario5d3r7c05h06jn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
