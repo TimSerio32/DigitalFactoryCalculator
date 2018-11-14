@@ -280,13 +280,6 @@
         app:layout_constraintStart_toEndOf="@+id/barrier2"
         app:layout_constraintTop_toTopOf="@+id/barrier6" />
 
-    <!--<android.support.constraint.Barrier
-        android:id="@+id/barrier8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="bottom"
-        app:constraint_referenced_ids="btn_tangent, btn_cosine, btn_sine, btn_equals"/>-->
-
     <Button
         android:id="@+id/btn_clear"
         android:layout_width="wrap_content"
